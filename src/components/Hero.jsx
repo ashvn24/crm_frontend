@@ -57,6 +57,7 @@ export default function Hero() {
         data.append("phone", formData.phone);
         data.append("time", appTime);
         data.append("date", appointment);
+        data.append("booking","doctor")
 
         toast.promise(
           axiosInstance.post(`/gateway/book/`, data).then((res) => {

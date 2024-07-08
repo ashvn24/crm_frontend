@@ -6,6 +6,10 @@ import { IoMdClose } from "react-icons/io";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    localStorage.removeItem("access")
+  }
+
   return (
     <div className="sticky top-0 z-50 bg-[#F2F7FF] bg-opacity-80 p-3 backdrop-blur-md">
       <div className="mx-auto flex max-w-screen-xl items-center justify-between">
@@ -52,7 +56,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <Button className="hidden md:flex" />
+        <Button onClick={handleClick} className="hidden md:flex" />
 
         {/* Mobile Screen */}
         <div className="relative md:hidden">
@@ -105,7 +109,7 @@ export default function Navbar() {
                 </li>
               </ul>
 
-              <Button className="w-full" />
+              <Button className="w-full" />df
             </div>
           )}
         </div>

@@ -19,7 +19,7 @@ const AuthLayout = () => {
       <div className="py-40 h-screen  " style={{backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
             <div className=" bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm   max-sm:mt-16">
                 <div className=" p-8 ">
-                    <h2 className="text-2xl font-semibold text-gray-700 text-center">An Amis</h2>
+                    <h2 className="text-2xl font-semibold text-gray-700 text-center"></h2>
                     <p className="text-xl text-gray-600 text-center">Welcome back!</p>
                     <a href="#" className="flex items-center justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100">
                         

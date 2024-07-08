@@ -22,7 +22,6 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    var data = new FormData()
     const isValid = Object.values(formData).every(value=>value!=='');
     if (isValid) {
       setLoad(true);
